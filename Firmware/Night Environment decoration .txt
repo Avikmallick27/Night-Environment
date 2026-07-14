@@ -1,0 +1,158 @@
+===========================================
+ESP32 FIRMWARE DESCRIPTION
+===========================================
+
+Project Name:
+Night Environment System
+
+Description:
+The ESP32 firmware collects environmental data from DHT11 and DS18B20 sensors, displays live information on an OLED display, synchronizes date and time using an NTP server, and uploads processed sensor data to Firebase Realtime Database every 30 seconds through Wi-Fi.
+
+-------------------------------------------
+Microcontroller
+-------------------------------------------
+
+1. ESP32 Development Board
+   Purpose:
+   - Reads sensor data
+   - Connects to Wi-Fi
+   - Uploads data to Firebase
+   - Controls OLED display
+
+-------------------------------------------
+Hardware Components
+-------------------------------------------
+
+1. ESP32 Development Board
+
+2. DHT11 Temperature & Humidity Sensor
+
+3. DS18B20 Waterproof Temperature Sensor
+
+4. 0.96" SSD1306 OLED Display (I2C)
+
+5. 4.7kΩ Pull-up Resistor (Required for DS18B20)
+
+6. USB Cable
+
+7. Breadboard
+
+8. Jumper Wires
+
+-------------------------------------------
+Pin Connections
+-------------------------------------------
+
+ESP32 → DHT11
+
+GPIO4  -------- DATA
+3.3V   -------- VCC
+GND    -------- GND
+
+
+ESP32 → DS18B20
+
+GPIO5  -------- DATA
+3.3V   -------- VCC
+GND    -------- GND
+
+4.7kΩ resistor between DATA and 3.3V
+
+
+ESP32 → OLED SSD1306
+
+GPIO21 -------- SDA
+GPIO22 -------- SCL
+3.3V   -------- VCC
+GND    -------- GND
+
+-------------------------------------------
+Libraries Used
+-------------------------------------------
+
+1. WiFi.h
+Purpose:
+Connect ESP32 to Wi-Fi.
+
+2. HTTPClient.h
+Purpose:
+Upload JSON data to Firebase using HTTP.
+
+3. Wire.h
+Purpose:
+I2C communication with OLED display.
+
+4. U8g2lib.h
+Purpose:
+Control SSD1306 OLED display.
+
+5. DHT.h
+Purpose:
+Read DHT11 temperature and humidity sensor.
+
+6. OneWire.h
+Purpose:
+OneWire communication for DS18B20.
+
+7. DallasTemperature.h
+Purpose:
+Read DS18B20 temperature sensor.
+
+8. ArduinoJson.h
+Purpose:
+Create JSON object for Firebase upload.
+
+9. WiFiUdp.h
+Purpose:
+UDP communication for NTP.
+
+10. NTPClient.h
+Purpose:
+Obtain current date and time from internet.
+
+-------------------------------------------
+Main Functions
+-------------------------------------------
+
+1. Connect ESP32 to Wi-Fi
+
+2. Synchronize date and time
+
+3. Read DHT11 sensor
+
+4. Read DS18B20 sensor
+
+5. Calculate Average Temperature
+
+6. Calculate Minimum Temperature
+
+7. Calculate Maximum Temperature
+
+8. Calculate Average Humidity
+
+9. Display live data on OLED
+
+10. Upload JSON data every 30 seconds
+
+11. Reset statistics after upload
+
+-------------------------------------------
+Data Upload Interval
+-------------------------------------------
+
+30 Seconds
+
+-------------------------------------------
+Communication Protocols
+-------------------------------------------
+
+Wi-Fi
+HTTP
+I2C
+OneWire
+NTP
+JSON
+
+===========================================
+END OF ESP32 DESCRIPTION
+===========================================
