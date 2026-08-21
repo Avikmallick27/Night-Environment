@@ -12,8 +12,8 @@
 // =======================
 // CONFIGURATION
 // =======================
-const char* ssid = "Avik";
-const char* password = "Avikmallick27";
+const char* ssid = "";
+const char* password = "";
 
 // Correct Firebase URL for your project
 String firebaseBase = "https://sleepmonitor-9bc49-default-rtdb.asia-southeast1.firebasedatabase.app";
