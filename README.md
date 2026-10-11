@@ -1,29 +1,31 @@
 # Night Environment
 
-An intelligent IoT-based platform for monitoring and analyzing nighttime environmental conditions to support sleep quality assessment and early health screening.
+> An IoT-driven monitoring and analytics platform for tracking nocturnal ambient conditions to support sleep hygiene assessment and health-screening prototypes.
 
-## Overview
-Night Environment is a research project designed to continuously monitor nighttime environmental conditions, visualize collected data, and provide insights that may help improve sleep quality.
+[![Status](https://img.shields.io/badge/Status-Active%20Development-blue?style=flat-square)](#)
+[![Domain](https://img.shields.io/badge/Domain-IoT%20%7C%20Biomedical%20Instrumentation-emerald?style=flat-square)](#)
+[![Prototype](https://img.shields.io/badge/Type-Research%20Prototype-orange?style=flat-square)](#)
 
-## Features
-- Real-time environmental monitoring
-- Live dashboard
-- Historical data visualization
-- Manual sleep record management
-- Sleep quality analysis
-- Environmental insights
-- Cloud data synchronization
+---
 
-## Repository Structure
-Firmware/
-Web_Dashboard/
-Documentation/
-README.md
+## 📖 Overview
 
-## Future Improvements
-- Mobile application
-- AI-based sleep prediction
-- Advanced analytics
+**Night Environment** is an experimental hardware-software platform designed to continuously log and analyze overnight environmental parameters (such as temperature, humidity, ambient lighting, and air variables). By pairing ambient data with user sleep logs, the project aims to identify environmental factors affecting sleep quality and facilitate exploratory health-screening research.
 
-## Author
-Avik Mallick
+> **Disclaimer:** This system is an engineering and research prototype intended for environmental tracking and sleep hygiene exploration. It is **not** a certified medical device and does not diagnose, treat, or prevent clinical conditions.
+
+---
+
+## ✨ Key Features
+
+- **Continuous Telemetry:** Real-time sensor acquisition for overnight ambient tracking.
+- **Live Monitoring Dashboard:** Browser-based interface for low-latency metric visualization.
+- **Historical Trends:** Time-series charts to evaluate environmental fluctuations across nights.
+- **Manual Sleep Journal:** Structured logging of subjective sleep quality, timing, and disturbances.
+- **Correlation Insights:** Visual baseline matching between room conditions and reported restfulness.
+- **Cloud Synchronization:** Secure, automated data uploads for unified multi-session storage.
+
+---
+
+## 🛠️ System Architecture & Tech Stack
+
