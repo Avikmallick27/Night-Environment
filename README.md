@@ -1,33 +1,43 @@
 # Night Environment
 
-> An intelligent IoT-based telemetry and analytics platform for monitoring nocturnal environmental conditions to evaluate sleep quality factors and support exploratory health-screening prototypes.
+> An intelligent IoT-based platform for monitoring and analyzing nighttime environmental conditions to support sleep quality assessment and early health screening.
+
+<p align="left">
+  <img src="https://img.shields.io/badge/IoT-Monitoring-blue?style=flat-square" alt="IoT" />
+  <img src="https://img.shields.io/badge/Status-In_Development-success?style=flat-square" alt="Status" />
+  <a href="https://github.com/Avikmallick27">
+    <img src="https://img.shields.io/badge/GitHub-Avikmallick27-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/avikmallick27">
+    <img src="https://img.shields.io/badge/LinkedIn-avikmallick27-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+</p>
 
 ---
 
-## 📌 Project Overview
+## Overview
 
-**Night Environment** is an end-to-end IoT research platform engineered to bridge room ambiance with sleep physiology. The system continuously logs nocturnal ambient metrics—such as ambient temperature, humidity, lighting levels, and air parameters—and synchronizes the telemetry to cloud storage in real time. Through a responsive live dashboard and historical time-series charts, users can correlate ambient room shifts with subjective sleep logs to identify environmental disruptions, optimize sleep hygiene, and provide structured baseline data for preventative wellness research.
-
-> *Note: This project is an experimental engineering prototype designed for environmental tracking and sleep hygiene analysis. It is non-diagnostic and not intended for clinical use.*
+Night Environment is a research project designed to continuously monitor nighttime environmental conditions, visualize collected data, and provide insights that may help improve sleep quality.
 
 ---
 
-## ✨ Features
+## Features
 
-- **Real-Time Telemetry:** Continuous multi-sensor acquisition of overnight environmental parameters.
-- **Interactive Live Dashboard:** Clean, low-latency visual meters for immediate ambient status inspection.
-- **Historical Trend Visualization:** Time-series charts to evaluate environmental fluctuations across days and weeks.
-- **Sleep Record Management:** Structured manual logging interface for sleep duration, perceived quality, and disruptions.
-- **Environmental Insights:** Comparative analysis matching room condition anomalies against reported sleep quality.
-- **Cloud Synchronization:** Resilient automated cloud data forwarding for continuous remote logging.
+- Real-time environmental monitoring
+- Live dashboard
+- Historical data visualization
+- Manual sleep record management
+- Sleep quality analysis
+- Environmental insights
+- Cloud data synchronization
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 Night-Environment/
-├── Firmware/          # Microcontroller source code, board pinouts, and sensor drivers
-├── Web_Dashboard/     # Front-end interfaces, charting visualizers, and cloud config
-├── Documentation/     # Circuit diagrams, hardware schematics, and setup notes
-└── README.md          # Project overview and maintenance documentation
+├── Firmware/
+├── Web_Dashboard/
+├── Documentation/
+└── README.md
